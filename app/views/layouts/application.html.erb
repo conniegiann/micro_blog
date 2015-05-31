@@ -8,7 +8,16 @@
 </head>
 <body>
 
-<%= yield %>
+  <div class="container">
+
+    <nav>
+      <li><%= link_to('Create an Entry', new_article_path) %></li>
+      <li><%= link_to('All Articles', articles_path) %></li> |
+    </nav>
+
+    <%= yield %>
+
+  </div>
 
 </body>
 </html>
